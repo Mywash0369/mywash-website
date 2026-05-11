@@ -1,0 +1,9 @@
+# robots.txt — Mywash Recruitment Agency
+# https://www.mywashrecruitment.co.za
+
+User-agent: *
+Allow: /
+
+# Disallow nothing — all pages are public and indexable
+
+Sitemap: https://www.mywashrecruitment.co.za/sitemap.xml

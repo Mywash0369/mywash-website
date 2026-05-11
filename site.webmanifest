@@ -1,0 +1,21 @@
+{
+  "name": "Mywash Recruitment Agency",
+  "short_name": "Mywash",
+  "description": "Staffing, recruitment, travel and cleaning services in Gauteng, South Africa.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#F5A800",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

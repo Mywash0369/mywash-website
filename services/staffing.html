@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staffing | Mywash Recruitment Agency</title>
+  <meta name="description" content="Temporary and permanent staffing in Gauteng - domestic workers, nannies, gardeners, handymen, and general assistants for the FMCG industry." />
+  <link rel="canonical" href="https://www.mywashrecruitment.co.za/services/staffing.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Staffing | Mywash Recruitment Agency" />
+  <meta property="og:description" content="Temporary and permanent staffing in Gauteng - domestic workers, nannies, gardeners, handymen, and FMCG general assistants." />
+  <meta property="og:url" content="https://www.mywashrecruitment.co.za/services/staffing.html" />
+  <meta property="og:image" content="https://www.mywashrecruitment.co.za/images/og/staffing-og.jpg" />
+  <meta property="og:site_name" content="Mywash Recruitment Agency" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Staffing | Mywash Recruitment Agency" />
+  <meta name="twitter:description" content="Temporary and permanent staffing in Gauteng - domestic workers, nannies, gardeners, handymen, and FMCG general assistants." />
+  <meta name="twitter:image" content="https://www.mywashrecruitment.co.za/images/og/staffing-og.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#F5A800" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mywash Recruitment Agency",
+    "url": "https://www.mywashrecruitment.co.za",
+    "logo": "https://www.mywashrecruitment.co.za/images/logo.png",
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+27730966477", "email": "mywash@mail.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mywashrecruitment.co.za/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.mywashrecruitment.co.za/#services" },
+      { "@type": "ListItem", "position": 3, "name": "Staffing", "item": "https://www.mywashrecruitment.co.za/services/staffing.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you place temporary and permanent staff?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We place both temporary and permanent staff across all our staffing categories including domestic workers, nannies, gardeners, handymen, and FMCG general assistants." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you supply domestic workers and nannies?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We source and screen domestic workers, nannies, and childminders for private households across Gauteng. All candidates are reference-checked before placement." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you recruit for the FMCG industry?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our Managing Director has over 10 years of FMCG recruitment experience. We supply general assistants and other operational staff to FMCG companies across Gauteng." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1920&q=80" fetchpriority="high" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    /* Staffing type cards - two column audience split */
+    .audience-split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+    @media (min-width: 768px) {
+      .audience-split { grid-template-columns: 1fr 1fr; }
+    }
+
+    .audience-col {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+    }
+
+    .audience-col__header {
+      padding: var(--space-md) var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .audience-col--household .audience-col__header {
+      background-color: var(--color-primary);
+    }
+
+    .audience-col--business .audience-col__header {
+      background-color: var(--color-secondary);
+    }
+
+    .audience-col__header-title {
+      font-size: var(--text-body);
+      font-weight: 600;
+      color: var(--color-white);
+      font-family: var(--font-body);
+    }
+
+    .audience-col--household .audience-col__header-title {
+      color: var(--color-text-primary);
+    }
+
+    .audience-col__header-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+
+    .audience-col--household .audience-col__header-icon { color: var(--color-text-primary); }
+    .audience-col--business .audience-col__header-icon  { color: var(--color-white); }
+
+    .audience-col__body {
+      padding: var(--space-lg);
+      background: var(--color-white);
+    }
+
+    .audience-col__body p {
+      font-size: var(--text-small);
+      color: var(--color-text-body);
+      line-height: var(--leading-loose);
+      margin-bottom: var(--space-md);
+    }
+
+    /* Role pill list */
+    .role-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .role-list__item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 0.625rem var(--space-md);
+      background: var(--color-surface);
+      border-radius: var(--radius-btn);
+      font-size: var(--text-small);
+      font-weight: 500;
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+    }
+
+    .role-list__item-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      flex-shrink: 0;
+    }
+
+    /* Process timeline - horizontal on desktop */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+
+    .timeline__item {
+      display: flex;
+      gap: var(--space-md);
+      padding-bottom: var(--space-lg);
+      position: relative;
+    }
+
+    .timeline__item:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      width: 2px;
+      height: calc(100% - 40px);
+      background: var(--color-border);
+    }
+
+    .timeline__dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: var(--font-display);
+      font-size: var(--text-body);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline__content {
+      padding-top: 0.5rem;
+    }
+
+    .timeline__title {
+      font-size: var(--text-body);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      font-family: var(--font-body);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline__text {
+      font-size: var(--text-small);
+      color: var(--color-text-body);
+      line-height: var(--leading-loose);
+    }
+
+    @media (min-width: 1024px) {
+      .timeline {
+        flex-direction: row;
+        gap: 0;
+        align-items: flex-start;
+      }
+
+      .timeline__item {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+        padding-right: var(--space-sm);
+      }
+
+      .timeline__item:not(:last-child)::before {
+        left: 50%;
+        top: 19px;
+        width: calc(100% - 40px);
+        height: 2px;
+      }
+    }
+
+    /* FAQ */
+    .faq__list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
+    .faq__item { border-bottom: 1px solid var(--color-border); }
+    .faq__question {
+      width: 100%; text-align: left; padding: var(--space-md) 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--space-md); font-size: var(--text-body); font-weight: 500;
+      color: var(--color-text-primary); font-family: var(--font-body);
+      background: none; border: none; cursor: pointer;
+    }
+    .faq__icon { width: 20px; height: 20px; flex-shrink: 0; color: var(--color-primary); transition: transform 0.3s var(--ease-out); }
+    .faq__item.is-open .faq__icon { transform: rotate(45deg); }
+    .faq__answer { max-height: 0; overflow: hidden; transition: max-height 0.35s var(--ease-out), padding 0.35s var(--ease-out); }
+    .faq__item.is-open .faq__answer { max-height: 400px; padding-bottom: var(--space-md); }
+    .faq__answer p { font-size: var(--text-small); color: var(--color-text-body); line-height: var(--leading-loose); }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav class="nav nav--transparent" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo" aria-label="Mywash Recruitment Agency - Home">
+          <img src="/images/logo.png" alt="Mywash Recruitment Agency logo" class="nav__logo-img" width="140" height="44" />
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/about.html" class="nav__link">About</a></li>
+          <li class="nav__dropdown">
+            <a href="#" class="nav__link is-active" aria-haspopup="true">Services</a>
+            <ul class="nav__dropdown-menu" role="list">
+              <li><a href="/services/travel-management.html" class="nav__dropdown-item">Travel Management</a></li>
+              <li><a href="/services/property-management.html" class="nav__dropdown-item">Property Management</a></li>
+              <li><a href="/services/cleaning-services.html" class="nav__dropdown-item">Cleaning Services</a></li>
+              <li><a href="/services/staffing.html" class="nav__dropdown-item">Staffing</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Get in Touch</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav__drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+      <button class="nav__drawer-close" aria-label="Close menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <nav aria-label="Mobile navigation">
+        <ul class="nav__drawer-links" role="list">
+          <li><a href="/" class="nav__drawer-link">Home</a></li>
+          <li><a href="/about.html" class="nav__drawer-link">About</a></li>
+          <li>
+            <span class="nav__drawer-sublabel">Services</span>
+            <a href="/services/travel-management.html" class="nav__drawer-sublink">Travel Management</a>
+            <a href="/services/property-management.html" class="nav__drawer-sublink">Property Management</a>
+            <a href="/services/cleaning-services.html" class="nav__drawer-sublink">Cleaning Services</a>
+            <a href="/services/staffing.html" class="nav__drawer-sublink">Staffing</a>
+          </li>
+          <li><a href="/contact.html" class="nav__drawer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__drawer-cta"><a href="/contact.html" class="btn btn--primary">Get in Touch</a></div>
+    </div>
+    <div class="nav__overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero--md" aria-label="Staffing hero">
+      <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1920&q=80');" role="img" aria-label="Diverse group of professionals in a modern workplace environment"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Home</a><span class="breadcrumb__sep" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span></li>
+              <li class="breadcrumb__item"><a href="/#services" class="breadcrumb__link">Services</a><span class="breadcrumb__sep" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span></li>
+              <li class="breadcrumb__item"><span class="breadcrumb__current">Staffing</span></li>
+            </ol>
+          </nav>
+          <span class="label page-hero__label">Service</span>
+          <h1 class="page-hero__title">Staffing</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section-pad" aria-labelledby="staffing-intro-heading">
+      <div class="container">
+        <div class="two-col">
+          <div class="two-col__content reveal">
+            <span class="label">What We Do</span>
+            <h2 id="staffing-intro-heading">The Right Person. Every Time.</h2>
+            <p>Finding reliable staff is one of the hardest things a household or business faces. We take the guesswork out of it - sourcing, screening, and placing candidates who are the right fit for the role and the environment they are walking into.</p>
+            <p>We handle both temporary and permanent placements, giving you flexibility whether you need cover for a week or a long-term addition to your team. Our FMCG industry background means we understand what operational roles actually require - not just what the job description says.</p>
+            <div class="checklist mt-md" role="list">
+              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Temporary and permanent placements</div>
+              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Household and commercial roles</div>
+              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>All candidates screened and reference-checked</div>
+              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>10+ years FMCG recruitment experience</div>
+            </div>
+          </div>
+          <div class="two-col__media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
+              alt="Recruitment consultant interviewing a job candidate in a professional office setting"
+              width="800" height="520" loading="lazy" decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAFFING CATEGORIES -->
+    <section class="section-pad bg-surface" aria-labelledby="categories-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Who We Place</span>
+          <h2 id="categories-heading">Staffing for Households &amp; Businesses</h2>
+          <p class="section-header__subtitle">We serve both private households and commercial clients - with the same level of care and screening across both.</p>
+        </header>
+
+        <div class="audience-split reveal">
+
+          <!-- Household -->
+          <div class="audience-col audience-col--household">
+            <div class="audience-col__header">
+              <svg class="audience-col__header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <p class="audience-col__header-title">For Households</p>
+            </div>
+            <div class="audience-col__body">
+              <p>Trusted, vetted staff for your home - placed with care and matched to your household's specific needs and routines.</p>
+              <ul class="role-list" role="list">
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Domestic Workers</li>
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Nannies / Childminders</li>
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Gardeners</li>
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Handymen</li>
+              </ul>
+              <div class="audience-col__cta">
+                <a href="https://wa.me/27730966477?text=Hi%20Mywash%2C%20I%20need%20household%20staff" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Find Household Staff</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business -->
+          <div class="audience-col audience-col--business">
+            <div class="audience-col__header">
+              <svg class="audience-col__header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <p class="audience-col__header-title">For Businesses</p>
+            </div>
+            <div class="audience-col__body">
+              <p>Operational and general staff for businesses in the FMCG sector and beyond. Temporary cover or permanent additions to your workforce.</p>
+              <ul class="role-list" role="list">
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>General Assistants - FMCG Industry</li>
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Temporary Staff (short &amp; long term)</li>
+                <li class="role-list__item"><span class="role-list__item-dot" aria-hidden="true"></span>Permanent Placements</li>
+              </ul>
+              <div class="audience-col__cta">
+                <a href="/contact.html" class="btn btn--primary">Submit a Staffing Brief</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE PLACE -->
+    <section class="section-pad" aria-labelledby="process-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Our Process</span>
+          <h2 id="process-heading">From Brief to Placement</h2>
+          <p class="section-header__subtitle">A clear, simple process designed to get the right person in the right role without unnecessary back-and-forth.</p>
+        </header>
+
+        <div class="timeline reveal">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true">1</div>
+            <div class="timeline__content">
+              <p class="timeline__title">You brief us</p>
+              <p class="timeline__text">Tell us the role, the environment, the hours, and what matters most to you. WhatsApp or contact form - your choice.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true">2</div>
+            <div class="timeline__content">
+              <p class="timeline__title">We source &amp; screen</p>
+              <p class="timeline__text">We search our network, conduct interviews, and check references - only forwarding candidates who genuinely fit your brief.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true">3</div>
+            <div class="timeline__content">
+              <p class="timeline__title">You choose</p>
+              <p class="timeline__text">We present a shortlist. You meet the candidates and make the decision. No pressure, no rushed choices.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true">4</div>
+            <div class="timeline__content">
+              <p class="timeline__title">They start</p>
+              <p class="timeline__text">We handle the handover. And we follow up after placement to make sure everything is working as it should.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO PANELS -->
+    <div class="photo-stack">
+      <section class="photo-panel" style="--panel-bg: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920&q=80');" aria-labelledby="candidates-panel-heading">
+        <div class="photo-panel__content">
+          <span class="label photo-panel__label">Looking for Work?</span>
+          <h2 id="candidates-panel-heading" class="photo-panel__title">Register as a Candidate</h2>
+          <p class="photo-panel__text">We actively place candidates across Gauteng. Send us your details and the type of role you are looking for and we will be in touch when the right opportunity comes up.</p>
+          <a href="https://wa.me/27730966477?text=Hi%20Mywash%2C%20I%27m%20looking%20for%20work%20and%20would%20like%20to%20register%20as%20a%20candidate" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Register via WhatsApp</a>
+        </div>
+      </section>
+      <section class="photo-panel" style="--panel-bg: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1920&q=80');" aria-labelledby="employers-panel-heading">
+        <div class="photo-panel__content">
+          <span class="label photo-panel__label">Need to Hire?</span>
+          <h2 id="employers-panel-heading" class="photo-panel__title">Let's Find Your Next Hire</h2>
+          <p class="photo-panel__text">Whether it's one person or a whole team, we move fast and we move smart. Submit a brief and we will start working on it immediately.</p>
+          <a href="/contact.html" class="btn btn--primary">Submit a Brief</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ -->
+    <section class="section-pad bg-surface" aria-labelledby="faq-heading">
+      <div class="container--narrow">
+        <header class="section-header reveal">
+          <span class="label">Questions</span>
+          <h2 id="faq-heading">Common Questions</h2>
+        </header>
+        <div class="faq__list reveal" role="list">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Do you place temporary and permanent staff?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><p>Yes. We handle both temporary and permanent placements across all our staffing categories. Whether you need someone for a week or a long-term hire, we can help.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Are all candidates reference-checked?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><p>Yes. Every candidate we place goes through an interview and reference check process before we present them to you. We only forward people we would place ourselves.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Do you recruit for the FMCG industry?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><p>Yes. Our Managing Director has over 10 years of FMCG recruitment experience. We supply general assistants and other operational staff to FMCG companies across Gauteng and understand exactly what these roles demand.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              How do I register as a candidate?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><p>The fastest way is to WhatsApp us with your name, the type of role you are looking for, and your location. We will capture your details and reach out when a suitable opportunity comes up.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" aria-labelledby="staffing-cta-heading">
+      <div class="container">
+        <span class="label cta-banner__label">Let's Get Started</span>
+        <h2 id="staffing-cta-heading" class="cta-banner__title">Hire Right. Place Well.</h2>
+        <p class="cta-banner__sub">Whether you are hiring or looking for work, one WhatsApp is all it takes to get the ball rolling.</p>
+        <div class="cta-banner__btns">
+          <a href="/contact.html" class="btn btn--primary">Submit a Hiring Brief</a>
+          <a href="https://wa.me/27730966477?text=Hi%20Mywash%2C%20I%27m%20looking%20for%20work" class="btn btn--ghost-white" target="_blank" rel="noopener noreferrer">Register as a Candidate</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="/images/logo.png" alt="Mywash Recruitment Agency" class="footer__logo" width="140" height="44" loading="lazy" />
+          <p class="footer__tagline">Bridging the gap between talented professionals and leading organisations across Gauteng, South Africa.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://www.facebook.com/share/1NX3bXwiZi/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://wa.me/27730966477" class="footer__social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+            <a href="https://whatsapp.com/channel/0029Vb7r6QHEAKWMLTolqH0t" class="footer__social-link" aria-label="WhatsApp Channel" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Footer services navigation">
+          <span class="footer__col-title">Services</span>
+          <ul class="footer__links" role="list">
+            <li><a href="/services/travel-management.html" class="footer__link">Travel Management</a></li>
+            <li><a href="/services/property-management.html" class="footer__link">Property Management</a></li>
+            <li><a href="/services/cleaning-services.html" class="footer__link">Cleaning Services</a></li>
+            <li><a href="/services/staffing.html" class="footer__link">Staffing</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer company navigation">
+          <span class="footer__col-title">Company</span>
+          <ul class="footer__links" role="list">
+            <li><a href="/about.html" class="footer__link">About Us</a></li>
+            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+            <li><a href="/privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div>
+          <span class="footer__col-title">Get in Touch</span>
+          <address>
+            <div class="footer__contact-item"><svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Gauteng, South Africa</span></div>
+            <div class="footer__contact-item"><svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+27730966477" class="footer__link">073 096 6477</a></div>
+            <div class="footer__contact-item"><svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:mywash@mail.com" class="footer__link">mywash@mail.com</a></div>
+          </address>
+          <div class="footer__cta-wrap"><a href="https://wa.me/27730966477" class="btn btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span class="js-year"></span> Mywash Recruitment Agency. Reg: K2026/125236/07. All rights reserved.</p>
+        <nav class="footer__legal-links" aria-label="Legal links"><a href="/privacy-policy.html" class="footer__legal-link">Privacy Policy</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27730966477" class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq__item');
+        const isOpen = item.classList.contains('is-open');
+        document.querySelectorAll('.faq__item').forEach(i => {
+          i.classList.remove('is-open');
+          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) { item.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  </script>
+</body>
+</html>

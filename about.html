@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>About Us | Mywash Recruitment Agency - Gauteng</title>
+  <meta name="description" content="Meet the team behind Mywash Recruitment Agency. Based in Gauteng, we connect top talent with leading organisations through a personalised, strategic approach to recruitment." />
+  <link rel="canonical" href="https://www.mywashrecruitment.co.za/about.html" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="About Mywash Recruitment Agency" />
+  <meta property="og:description"  content="Based in Gauteng, we connect top talent with leading organisations through a personalised, strategic approach to recruitment." />
+  <meta property="og:url"          content="https://www.mywashrecruitment.co.za/about.html" />
+  <meta property="og:image"        content="https://www.mywashrecruitment.co.za/images/og/about-og.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name"    content="Mywash Recruitment Agency" />
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="About Mywash Recruitment Agency" />
+  <meta name="twitter:description" content="Based in Gauteng, we connect top talent with leading organisations through a personalised, strategic approach to recruitment." />
+  <meta name="twitter:image"       content="https://www.mywashrecruitment.co.za/images/og/about-og.jpg" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#F5A800" />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mywash Recruitment Agency",
+    "url": "https://www.mywashrecruitment.co.za",
+    "logo": "https://www.mywashrecruitment.co.za/images/logo.png",
+    "description": "Mywash Recruitment Agency bridges the gap between talented professionals and leading organisations in Gauteng, South Africa.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Gauteng",
+      "addressCountry": "ZA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+27730966477",
+      "email": "mywash@mail.com"
+    },
+    "foundingDate": "2026",
+    "registration": "K2026/125236/07"
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mywashrecruitment.co.za/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.mywashrecruitment.co.za/about.html" }
+    ]
+  }
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" fetchpriority="high" />
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    /* ── Page-specific styles ── */
+
+    /* Promise split section */
+    .promise {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+
+    .promise__col {
+      padding: var(--space-lg);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--color-border);
+    }
+
+    .promise__col--candidates {
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .promise__col--clients {
+      border-left: 4px solid var(--color-secondary);
+    }
+
+    .promise__col-title {
+      font-family: var(--font-body);
+      font-size: var(--text-body);
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+
+    .promise__col-title-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .promise__col--candidates .promise__col-title-dot {
+      background-color: var(--color-primary);
+    }
+
+    .promise__col--clients .promise__col-title-dot {
+      background-color: var(--color-secondary);
+    }
+
+    @media (min-width: 768px) {
+      .promise {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Sector pills */
+    .sectors__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+    }
+
+    .sector-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-primary-light);
+      border: 1px solid var(--color-primary);
+      border-radius: 999px;
+      font-size: var(--text-small);
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+
+    .sector-pill svg {
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+
+    /* Stat overlay panel */
+    .stat-panel {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .stat-panel__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+
+    .stat-panel__bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(27, 58, 92, 0.82);
+    }
+
+    .stat-panel__content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: var(--space-2xl) var(--gutter);
+    }
+
+    .stat-panel__number {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 12vw, 10rem);
+      color: var(--color-primary);
+      line-height: 1;
+      display: block;
+    }
+
+    .stat-panel__label {
+      font-size: var(--text-h3);
+      color: var(--color-white);
+      margin-top: var(--space-sm);
+      display: block;
+    }
+
+    .stat-panel__sub {
+      font-size: var(--text-body);
+      color: rgba(255,255,255,0.7);
+      margin-top: var(--space-xs);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav nav--transparent" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo" aria-label="Mywash Recruitment Agency - Home">
+          <img src="/images/logo.png" alt="Mywash Recruitment Agency logo" class="nav__logo-img" width="140" height="44" />
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/about.html" class="nav__link is-active">About</a></li>
+          <li class="nav__dropdown">
+            <a href="#" class="nav__link" aria-haspopup="true">Services</a>
+            <ul class="nav__dropdown-menu" role="list">
+              <li><a href="/services/travel-management.html" class="nav__dropdown-item">Travel Management</a></li>
+              <li><a href="/services/property-management.html" class="nav__dropdown-item">Property Management</a></li>
+              <li><a href="/services/cleaning-services.html" class="nav__dropdown-item">Cleaning Services</a></li>
+              <li><a href="/services/staffing.html" class="nav__dropdown-item">Staffing</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="/contact.html" class="btn btn--primary nav__cta">Get in Touch</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+      <button class="nav__drawer-close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <nav aria-label="Mobile navigation">
+        <ul class="nav__drawer-links" role="list">
+          <li><a href="/" class="nav__drawer-link">Home</a></li>
+          <li><a href="/about.html" class="nav__drawer-link">About</a></li>
+          <li>
+            <span class="nav__drawer-sublabel">Services</span>
+            <a href="/services/travel-management.html" class="nav__drawer-sublink">Travel Management</a>
+            <a href="/services/property-management.html" class="nav__drawer-sublink">Property Management</a>
+            <a href="/services/cleaning-services.html" class="nav__drawer-sublink">Cleaning Services</a>
+            <a href="/services/staffing.html" class="nav__drawer-sublink">Staffing</a>
+          </li>
+          <li><a href="/contact.html" class="nav__drawer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__drawer-cta">
+        <a href="/contact.html" class="btn btn--primary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="nav__overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PAGE HERO
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="page-hero page-hero--lg" aria-label="About page hero">
+      <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80');" role="img" aria-label="Modern professional office with natural light and collaborative workspace"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList">
+              <li class="breadcrumb__item" property="itemListElement" typeof="ListItem">
+                <a href="/" class="breadcrumb__link" property="item" typeof="WebPage"><span property="name">Home</span></a>
+                <span class="breadcrumb__sep" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </span>
+                <meta property="position" content="1" />
+              </li>
+              <li class="breadcrumb__item" property="itemListElement" typeof="ListItem">
+                <span class="breadcrumb__current" property="name">About</span>
+                <meta property="position" content="2" />
+              </li>
+            </ol>
+          </nav>
+          <h1 class="page-hero__title">Built on Relationships.<br>Guided by Results.</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         OUR STORY
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="two-col">
+          <div class="two-col__media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80"
+              alt="Professional office building representing Mywash Recruitment Agency headquarters in Gauteng"
+              width="800"
+              height="520"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="two-col__content reveal">
+            <span class="label">Our Story</span>
+            <h2 id="story-heading">A New Agency With Deep Roots</h2>
+            <p>Mywash Recruitment Agency was founded in Gauteng with a single conviction: that the right person in the right role changes everything. For the individual, it means purpose. For the organisation, it means performance.</p>
+            <p>We offer temporary and permanent recruitment across Johannesburg and the wider Gauteng region, bringing clients the candidate networks, location knowledge, and hands-on expertise to make every placement count.</p>
+            <p>We serve both sides of the employment relationship with equal commitment. Whether you are looking for your next great hire or your next great role, we treat your outcome as our responsibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MISSION & VALUES
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-pad bg-surface" aria-labelledby="values-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">What Guides Us</span>
+          <h2 id="values-heading">Our Values in Practice</h2>
+          <p class="section-header__subtitle">These are not words on a wall. They are the behaviours you will see from us every time we work together.</p>
+        </header>
+
+        <div class="values__grid reveal-stagger">
+          <div class="value-item reveal">
+            <div class="value-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <p class="value-item__title">We listen before we act</p>
+              <p class="value-item__text">Every brief, every CV, every conversation gets our full attention before we make a single recommendation. We take the time to get it right.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <p class="value-item__title">We keep our word</p>
+              <p class="value-item__text">If we commit to a timeline, a shortlist, or a follow-up, we deliver on it. No chasing. No excuses.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <p class="value-item__title">We think long term</p>
+              <p class="value-item__text">A placement that does not last is not a success. We match for fit, culture, and growth potential, not just for the immediate requirement.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-item__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <p class="value-item__title">We serve both sides equally</p>
+              <p class="value-item__text">Employers and candidates both deserve a great experience. We hold ourselves to the same standard on either side of the table.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         STAT OVERLAY PANEL
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="stat-panel" aria-label="10 years of recruitment experience">
+      <div class="stat-panel__bg" role="img" aria-label="Business professionals collaborating in a modern boardroom setting"></div>
+      <div class="stat-panel__content reveal">
+        <span class="stat-panel__number">10<span class="stat-panel__plus">+</span></span>
+        <span class="stat-panel__label">Years of Recruitment Expertise</span>
+        <p class="stat-panel__sub">Our Managing Director brings over a decade of FMCG industry knowledge directly to every search we run.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         MEET THE TEAM
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-labelledby="team-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">The People Behind the Work</span>
+          <h2 id="team-heading">Meet Our Team</h2>
+          <p class="section-header__subtitle">Every placement we make reflects the expertise, care, and professionalism of the people on our team.</p>
+        </header>
+
+        <div class="team__grid reveal-stagger">
+
+          <!-- Managing Director -->
+          <article class="team-card reveal">
+            <img
+              src="/images/logo.png"
+              alt="Tshabuse NM, Managing Director at Mywash Recruitment Agency"
+              class="team-card__photo"
+              width="120"
+              height="120"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="team-card__name">Tshabuse NM</h3>
+            <p class="team-card__title">Managing Director</p>
+            <p class="team-card__bio">A seasoned Recruitment Manager with over 10 years of experience connecting top talent with industry-leading companies in the FMCG sector. Known for a strategic approach to talent acquisition that drives business growth. Focused on building high-performing teams and lasting professional relationships.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTORS WE SERVE
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-pad bg-surface" aria-labelledby="sectors-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Where We Work</span>
+          <h2 id="sectors-heading">Sectors We Cover</h2>
+          <p class="section-header__subtitle">From fast-moving consumer goods to domestic services, our networks run deep across South Africa's key employment sectors.</p>
+        </header>
+
+        <div class="sectors__list reveal">
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            FMCG / General Assistants
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Property Management
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Domestic Services
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Industrial Cleaning
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Healthcare Cleaning
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Commercial Cleaning
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Child Care / Nannies
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Maintenance &amp; Operations
+          </span>
+          <span class="sector-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Travel &amp; Tourism
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CANDIDATE & CLIENT PROMISE
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-labelledby="promise-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Our Commitment</span>
+          <h2 id="promise-heading">What You Can Expect From Us</h2>
+        </header>
+
+        <div class="promise reveal">
+          <div class="promise__col promise__col--candidates">
+            <p class="promise__col-title">
+              <span class="promise__col-title-dot" aria-hidden="true"></span>
+              For Job Seekers
+            </p>
+            <ul class="checklist" role="list">
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                A recruiter who takes time to understand your goals, not just your CV.
+              </li>
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Honest feedback at every stage of the process.
+              </li>
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Roles matched to your experience and long-term direction, not just availability.
+              </li>
+            </ul>
+          </div>
+
+          <div class="promise__col promise__col--clients">
+            <p class="promise__col-title">
+              <span class="promise__col-title-dot" aria-hidden="true"></span>
+              For Employers
+            </p>
+            <ul class="checklist" role="list">
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Shortlists built around your brief, your culture, and your timeline.
+              </li>
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Transparent communication throughout - no black holes, no delays.
+              </li>
+              <li class="checklist__item">
+                <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                A recruiter who stands behind every candidate they place.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CTA BANNER
+    ═══════════════════════════════════════════════════════════ -->
+    <section class="cta-banner" aria-labelledby="about-cta-heading">
+      <div class="container">
+        <span class="label cta-banner__label">Let's Work Together</span>
+        <h2 id="about-cta-heading" class="cta-banner__title">Ready to Find the Right Fit?</h2>
+        <p class="cta-banner__sub">Whether you need to hire or want to be placed, we are ready to start the conversation.</p>
+        <div class="cta-banner__btns">
+          <a href="/contact.html" class="btn btn--primary">Start Hiring</a>
+          <a href="https://wa.me/27730966477" class="btn btn--ghost-white" target="_blank" rel="noopener noreferrer">Register as a Candidate</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="/images/logo.png" alt="Mywash Recruitment Agency" class="footer__logo" width="140" height="44" loading="lazy" />
+          <p class="footer__tagline">Bridging the gap between talented professionals and leading organisations across Gauteng, South Africa.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://www.facebook.com/share/1NX3bXwiZi/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://wa.me/27730966477" class="footer__social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb7r6QHEAKWMLTolqH0t" class="footer__social-link" aria-label="WhatsApp Channel" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav aria-label="Footer services navigation">
+          <span class="footer__col-title">Services</span>
+          <ul class="footer__links" role="list">
+            <li><a href="/services/travel-management.html" class="footer__link">Travel Management</a></li>
+            <li><a href="/services/property-management.html" class="footer__link">Property Management</a></li>
+            <li><a href="/services/cleaning-services.html" class="footer__link">Cleaning Services</a></li>
+            <li><a href="/services/staffing.html" class="footer__link">Staffing</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer company navigation">
+          <span class="footer__col-title">Company</span>
+          <ul class="footer__links" role="list">
+            <li><a href="/about.html" class="footer__link">About Us</a></li>
+            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+            <li><a href="/privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div>
+          <span class="footer__col-title">Get in Touch</span>
+          <address>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Gauteng, South Africa</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+27730966477" class="footer__link">073 096 6477</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:mywash@mail.com" class="footer__link">mywash@mail.com</a>
+            </div>
+          </address>
+          <div class="footer__cta-wrap">
+            <a href="https://wa.me/27730966477" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span class="js-year"></span> Mywash Recruitment Agency. Reg: K2026/125236/07. All rights reserved.</p>
+        <nav class="footer__legal-links" aria-label="Legal links">
+          <a href="/privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27730966477" class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="/js/main.js" defer></script>
+
+</body>
+</html>
