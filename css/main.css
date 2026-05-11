@@ -13,7 +13,7 @@
   --color-primary:       #F5A800;   /* yellow - CTAs, active states, accents */
   --color-primary-hover: #D48F00;   /* darker yellow - button hover */
   --color-primary-light: #FFF8E6;   /* pale yellow - hover bg, tag bg, focus halo */
-  --color-secondary:     #1B3A5C;   /* deep navy - CTA banner bg, minimal accents */
+  --color-secondary:     rgb(11, 29, 192);   /* deep navy - CTA banner bg, minimal accents */
 
   /* --- Neutral Foundation --- */
   --color-white:         #FFFFFF;   /* dominant background - 80%+ of all surfaces */

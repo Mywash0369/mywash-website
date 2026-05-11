@@ -282,21 +282,28 @@ const ContactForm = (() => {
 
     if (!valid) return;
 
-    // Build WhatsApp message from form fields
-    const name    = form.querySelector('[name="name"]')?.value || '';
-    const company = form.querySelector('[name="company"]')?.value || '';
-    const message = form.querySelector('[name="message"]')?.value || '';
-    const type    = form.querySelector('[name="type"]')?.value || 'General Enquiry';
+    // Build WhatsApp message from the current contact form fields.
+    const name    = form.querySelector('[name="name"]')?.value.trim() || '';
+    const phone   = form.querySelector('[name="phone"]')?.value.trim() || '';
+    const message = form.querySelector('[name="message"]')?.value.trim() || '';
+    const type    = form.querySelector('[name="type"]')?.value.trim() || 'General Enquiry';
 
     const text = encodeURIComponent(
       `Hi Mywash Recruitment Agency,\n\n` +
       `Name: ${name}\n` +
-      (company ? `Company: ${company}\n` : '') +
+      `Phone / WhatsApp: ${phone}\n` +
       `Enquiry type: ${type}\n\n` +
       `${message}`
     );
 
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+
+    const wrapper = document.querySelector('#form-wrapper');
+    const success = document.querySelector('#form-success');
+    if (wrapper && success) {
+      wrapper.style.display = 'none';
+      success.style.display = 'block';
+    }
   });
 
   // Clear error on input
