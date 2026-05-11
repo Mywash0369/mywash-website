@@ -377,7 +377,7 @@ p {
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 120px;
   width: auto;
   transition: filter 0.35s var(--ease-out);
 }
@@ -1181,8 +1181,8 @@ p {
 }
 
 .team-card__photo {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto var(--space-md);
@@ -1479,7 +1479,7 @@ p {
 }
 
 .footer__logo {
-  height: 44px;
+  height: 100px;
   width: auto;
   margin-bottom: var(--space-md);
 }
