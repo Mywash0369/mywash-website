@@ -304,6 +304,18 @@ p {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.btn--employer {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 1.5px solid var(--color-secondary);
+}
+
+.btn--employer:hover {
+  background-color: #07147A;
+  border-color: #07147A;
+  transform: translateY(-1px);
+}
+
 /* Text link with arrow */
 .btn--text {
   padding: 0;
@@ -377,7 +389,7 @@ p {
 }
 
 .nav__logo-img {
-  height: 120px;
+  height: 144px;
   width: auto;
   transition: filter 0.35s var(--ease-out);
 }
@@ -436,10 +448,33 @@ p {
   position: relative;
 }
 
+.nav__dropdown > .nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav__dropdown > .nav__link::before {
+  content: '';
+  order: 2;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s var(--ease-out);
+}
+
+.nav__dropdown.is-open > .nav__link::before,
+.nav__dropdown:hover > .nav__link::before,
+.nav__dropdown:focus-within > .nav__link::before {
+  transform: rotate(225deg) translate(-2px, -1px);
+}
+
 .nav__dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-white);
@@ -451,7 +486,9 @@ p {
   z-index: var(--z-dropdown);
 }
 
-.nav__dropdown:hover .nav__dropdown-menu {
+.nav__dropdown:hover .nav__dropdown-menu,
+.nav__dropdown:focus-within .nav__dropdown-menu,
+.nav__dropdown.is-open .nav__dropdown-menu {
   display: block;
 }
 
@@ -872,6 +909,37 @@ p {
 
 .photo-panel.is-active::after {
   opacity: 1;
+}
+
+/* Homepage split: candidate and employer CTAs side by side on larger screens */
+@media (min-width: 768px) {
+  .photo-stack--split {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photo-stack--split .photo-panel {
+    min-height: 72vh;
+  }
+
+  .photo-stack--split .photo-panel::before,
+  .photo-stack--split .photo-panel::after {
+    position: absolute;
+    opacity: 1;
+  }
+
+  .photo-stack--split .photo-panel::before {
+    z-index: 0;
+  }
+
+  .photo-stack--split .photo-panel::after {
+    z-index: 0;
+  }
+
+  .photo-stack--split .photo-panel__content {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
 }
 
 /* Mobile: use static background instead of fixed (iOS fix) */
@@ -1354,7 +1422,8 @@ p {
    ========================================================================== */
 
 .cta-banner {
-  background-color: var(--color-secondary);
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border);
   padding: var(--space-2xl) 0;
   text-align: center;
 }
@@ -1366,7 +1435,7 @@ p {
 
 .cta-banner__title {
   font-size: var(--text-h1);
-  color: var(--color-white);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-sm);
   max-width: 680px;
   margin-left: auto;
@@ -1375,7 +1444,7 @@ p {
 
 .cta-banner__sub {
   font-size: var(--text-body);
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--color-text-muted);
   margin-bottom: var(--space-lg);
   max-width: 480px;
   margin-left: auto;
@@ -1479,7 +1548,7 @@ p {
 }
 
 .footer__logo {
-  height: 100px;
+  height: 120px;
   width: auto;
   margin-bottom: var(--space-md);
 }

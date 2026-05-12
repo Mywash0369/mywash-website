@@ -15,6 +15,7 @@ const Nav = (() => {
   const drawer     = document.querySelector('.nav__drawer');
   const overlay    = document.querySelector('.nav__overlay');
   const drawerClose= document.querySelector('.nav__drawer-close');
+  const dropdowns  = document.querySelectorAll('.nav__dropdown');
   const SCROLL_THRESHOLD = 80;
 
   if (!nav) return;
@@ -44,6 +45,14 @@ const Nav = (() => {
     document.body.style.overflow = '';
   }
 
+  function closeDropdowns(except = null) {
+    dropdowns.forEach(dropdown => {
+      if (dropdown === except) return;
+      dropdown.classList.remove('is-open');
+      dropdown.querySelector('.nav__link')?.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   // Init
   setScrolled();
   window.addEventListener('scroll', setScrolled, { passive: true });
@@ -52,9 +61,29 @@ const Nav = (() => {
   drawerClose?.addEventListener('click', closeDrawer);
   overlay?.addEventListener('click', closeDrawer);
 
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav__link');
+
+    trigger?.setAttribute('aria-expanded', 'false');
+
+    trigger?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isOpen = dropdown.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', String(isOpen));
+      closeDropdowns(dropdown);
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav__dropdown')) closeDropdowns();
+  });
+
   // Close drawer on ESC
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeDrawer();
+    if (e.key === 'Escape') {
+      closeDrawer();
+      closeDropdowns();
+    }
   });
 
   // Active nav link
