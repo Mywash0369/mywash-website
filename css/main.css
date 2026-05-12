@@ -234,8 +234,12 @@ p {
 }
 
 .section-footer {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
   margin-top: var(--space-lg);
+  text-align: center;
 }
 
 /* Surface variation */
@@ -1443,55 +1447,7 @@ p {
 }
 
 /* ==========================================================================
-   15. CTA BANNER
-   ========================================================================== */
-
-.cta-banner {
-  background-color: var(--color-white);
-  border-top: 1px solid var(--color-border);
-  padding: var(--space-2xl) 0;
-  text-align: center;
-}
-
-.cta-banner__label {
-  color: var(--color-primary);
-  margin-bottom: var(--space-sm);
-}
-
-.cta-banner__title {
-  font-size: var(--text-h1);
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-sm);
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-banner__sub {
-  font-size: var(--text-body);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-lg);
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-banner__btns {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  align-items: center;
-}
-
-@media (min-width: 640px) {
-  .cta-banner__btns {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-/* ==========================================================================
-   16. CONTACT FORM
+   15. CONTACT FORM
    ========================================================================== */
 
 .contact-form {
