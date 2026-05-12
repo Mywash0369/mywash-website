@@ -76,7 +76,7 @@
   }
   </script>
 
-  <link rel="preload" as="image" href="/images/travel_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/travel_hero-900.webp" imagesrcset="/images/travel_hero-900.webp 900w, /images/travel_hero-1200.webp 1200w, /images/travel_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
 
   <style>
@@ -285,7 +285,10 @@
 
     <!-- PAGE HERO -->
     <section class="page-hero page-hero--md" aria-label="Travel management hero">
-      <div class="page-hero__bg" style="background-image: url('/images/travel_hero.jpg');" role="img" aria-label="Scenic travel destination with clear blue water and white sandy beach"></div>
+      <picture class="page-hero__bg">
+        <source srcset="/images/travel_hero-900.webp 900w, /images/travel_hero-1200.webp 1200w, /images/travel_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/travel_hero.jpg" alt="Scenic travel destination with clear blue water and white sandy beach" width="1200" height="948" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="container">
         <div class="page-hero__content">
           <nav aria-label="Breadcrumb">

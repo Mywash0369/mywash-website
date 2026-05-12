@@ -57,7 +57,7 @@
   }
   </script>
 
-  <link rel="preload" as="image" href="/images/cleaning_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/cleaning_hero-900.webp" imagesrcset="/images/cleaning_hero-900.webp 900w, /images/cleaning_hero-1200.webp 1200w, /images/cleaning_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
   <style>
     .cleaning-grid {
@@ -165,7 +165,10 @@
 
     <!-- PAGE HERO -->
     <section class="page-hero page-hero--md" aria-label="Cleaning services hero">
-      <div class="page-hero__bg" style="background-image: url('/images/cleaning_hero.jpg');" role="img" aria-label="Professional cleaning team working in a bright commercial office space"></div>
+      <picture class="page-hero__bg">
+        <source srcset="/images/cleaning_hero-900.webp 900w, /images/cleaning_hero-1200.webp 1200w, /images/cleaning_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/cleaning_hero.jpg" alt="Professional cleaning team working in a bright commercial office space" width="1200" height="1798" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="container">
         <div class="page-hero__content">
           <nav aria-label="Breadcrumb">
@@ -302,7 +305,7 @@
 
     <!-- PHOTO PANEL -->
     <div class="photo-stack">
-      <section class="photo-panel" style="--panel-bg: url('/images/cleaning_cta.jpg');" aria-labelledby="cleaning-panel-heading">
+      <section class="photo-panel" style="--panel-bg: url('/images/cleaning_cta-1200.webp');" aria-labelledby="cleaning-panel-heading">
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Our Standard</span>
           <h2 id="cleaning-panel-heading" class="photo-panel__title">Cleaning Done Right, Every Time</h2>

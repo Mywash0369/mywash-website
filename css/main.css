@@ -210,6 +210,8 @@ p {
 
 .section-pad {
   padding: var(--space-2xl) 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 720px;
 }
 
 .section-pad--lg {
@@ -692,9 +694,21 @@ p {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center top;
+  display: block;
+  overflow: hidden;
   z-index: 0;
+}
+
+.hero__bg img,
+.page-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__bg img {
+  object-position: center top;
 }
 
 /* Dark gradient overlay for text legibility */
@@ -804,9 +818,13 @@ p {
 .page-hero__bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  display: block;
+  overflow: hidden;
   z-index: 0;
+}
+
+.page-hero__bg img {
+  object-position: center;
 }
 
 .page-hero__bg::after {

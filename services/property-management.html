@@ -57,7 +57,7 @@
   }
   </script>
 
-  <link rel="preload" as="image" href="/images/property_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/property_hero-900.webp" imagesrcset="/images/property_hero-900.webp 900w, /images/property_hero-1200.webp 1200w, /images/property_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
   <style>
     .roles__grid {
@@ -165,7 +165,10 @@
 
     <!-- PAGE HERO -->
     <section class="page-hero page-hero--md" aria-label="Property management hero">
-      <div class="page-hero__bg" style="background-image: url('/images/property_hero.jpg');" role="img" aria-label="Modern residential apartment building with well-maintained common areas and professional landscaping"></div>
+      <picture class="page-hero__bg">
+        <source srcset="/images/property_hero-900.webp 900w, /images/property_hero-1200.webp 1200w, /images/property_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/property_hero.jpg" alt="Modern residential apartment building with well-maintained common areas and professional landscaping" width="1200" height="902" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="container">
         <div class="page-hero__content">
           <nav aria-label="Breadcrumb">
@@ -187,9 +190,9 @@
         <div class="two-col">
           <div class="two-col__media reveal">
             <img
-              src="/images/property_intro.jpg"
+              src="/images/property_intro-1200.webp"
               alt="Professional property manager reviewing building maintenance schedule with facilities team"
-              width="800" height="520" loading="lazy" decoding="async"
+              width="1200" height="1800" loading="lazy" decoding="async"
             />
           </div>
           <div class="two-col__content reveal">
@@ -250,7 +253,7 @@
 
     <!-- PHOTO PANEL -->
     <div class="photo-stack">
-      <section class="photo-panel" style="--panel-bg: url('/images/property_cta.jpg');" aria-labelledby="property-panel-heading">
+      <section class="photo-panel" style="--panel-bg: url('/images/property_cta-1200.webp');" aria-labelledby="property-panel-heading">
         <div class="photo-panel__content">
           <span class="label photo-panel__label">For Property Managers</span>
           <h2 id="property-panel-heading" class="photo-panel__title">Stop Carrying Staff Gaps Alone</h2>

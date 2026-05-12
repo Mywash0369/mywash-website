@@ -70,7 +70,7 @@
   }
   </script>
 
-  <link rel="preload" as="image" href="/images/staffing_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/staffing_hero-900.webp" imagesrcset="/images/staffing_hero-900.webp 900w, /images/staffing_hero-1200.webp 1200w, /images/staffing_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
   <style>
     /* Staffing type cards - two column audience split */
@@ -342,7 +342,10 @@
 
     <!-- PAGE HERO -->
     <section class="page-hero page-hero--md" aria-label="Staffing hero">
-      <div class="page-hero__bg" style="background-image: url('/images/staffing_hero.jpg');" role="img" aria-label="Diverse group of professionals in a modern workplace environment"></div>
+      <picture class="page-hero__bg">
+        <source srcset="/images/staffing_hero-900.webp 900w, /images/staffing_hero-1200.webp 1200w, /images/staffing_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/staffing_hero.jpg" alt="Diverse group of professionals in a modern workplace environment" width="1200" height="800" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="container">
         <div class="page-hero__content">
           <nav aria-label="Breadcrumb">
@@ -483,7 +486,7 @@
 
     <!-- PHOTO PANELS -->
     <div class="photo-stack photo-stack--split staffing-cta-split" role="group" aria-label="Candidate registration and hiring request options">
-      <section class="photo-panel" style="--panel-bg: url('/images/candidate_cta.jpg');" aria-labelledby="candidates-panel-heading">
+      <section class="photo-panel" style="--panel-bg: url('/images/candidate_cta-1200.webp');" aria-labelledby="candidates-panel-heading">
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Looking for Work?</span>
           <h2 id="candidates-panel-heading" class="photo-panel__title">Register as a Candidate</h2>
@@ -491,7 +494,7 @@
           <a href="https://wa.me/27730966477?text=Hi%20Mywash%2C%20I%27m%20looking%20for%20work%20and%20would%20like%20to%20register%20as%20a%20candidate" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Register via WhatsApp</a>
         </div>
       </section>
-      <section class="photo-panel" style="--panel-bg: url('/images/employer_cta.jpg');" aria-labelledby="employers-panel-heading">
+      <section class="photo-panel" style="--panel-bg: url('/images/employer_cta-1200.webp');" aria-labelledby="employers-panel-heading">
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Need to Hire?</span>
           <h2 id="employers-panel-heading" class="photo-panel__title">Let's Find Your Next Hire</h2>

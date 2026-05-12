@@ -77,7 +77,7 @@
   </script>
 
   <!-- Stylesheet -->
-  <link rel="preload" as="image" href="/images/main_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/main_hero-900.webp" imagesrcset="/images/main_hero-900.webp 900w, /images/main_hero-1200.webp 1200w, /images/main_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 
@@ -163,7 +163,10 @@
          HERO
     ═══════════════════════════════════════════════════════════ -->
     <section class="hero" aria-label="Hero">
-      <div class="hero__bg" style="background-image: url('/images/main_hero.jpg');" role="img" aria-label="Professionals working together in a modern office environment"></div>
+      <picture class="hero__bg">
+        <source srcset="/images/main_hero-900.webp 900w, /images/main_hero-1200.webp 1200w, /images/main_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/main_hero.jpg" alt="Professionals working together in a modern office environment" width="1200" height="802" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="hero__content">
         <span class="label hero__label">Gauteng's Trusted Recruitment Partner</span>
         <h1 class="hero__title">Where Talent Meets Opportunity</h1>
@@ -221,10 +224,10 @@
         <div class="two-col">
           <div class="two-col__media reveal">
             <img
-              src="/images/who_we_are.jpg"
+              src="/images/who_we_are-1200.webp"
               alt="Recruitment professional reviewing candidate profiles at a desk"
-              width="800"
-              height="520"
+              width="1200"
+              height="1798"
               loading="lazy"
               decoding="async"
             />
@@ -320,7 +323,7 @@
       <!-- Panel 1: For Candidates -->
       <section
         class="photo-panel"
-        style="--panel-bg: url('/images/candidate_cta.jpg');"
+        style="--panel-bg: url('/images/candidate_cta-1200.webp');"
         aria-labelledby="candidates-heading"
       >
         <div class="photo-panel__content">
@@ -334,7 +337,7 @@
       <!-- Panel 2: For Clients -->
       <section
         class="photo-panel"
-        style="--panel-bg: url('/images/employer_cta.jpg');"
+        style="--panel-bg: url('/images/employer_cta-1200.webp');"
         aria-labelledby="clients-heading"
       >
         <div class="photo-panel__content">

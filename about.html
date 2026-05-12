@@ -77,7 +77,7 @@
   </script>
 
   <!-- Stylesheet -->
-  <link rel="preload" as="image" href="/images/about_hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/about_hero-900.webp" imagesrcset="/images/about_hero-900.webp 900w, /images/about_hero-1200.webp 1200w, /images/about_hero-1600.webp 1600w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/css/main.css" />
 
   <style>
@@ -332,7 +332,7 @@
     .stat-panel__bg {
       position: absolute;
       inset: 0;
-      background-image: url('/images/about_stat.jpg');
+      background-image: url('/images/about_stat-1200.webp');
       background-size: cover;
       background-position: center;
       z-index: 0;
@@ -447,7 +447,10 @@
          PAGE HERO
     ═══════════════════════════════════════════════════════════ -->
     <section class="page-hero page-hero--lg" aria-label="About page hero">
-      <div class="page-hero__bg" style="background-image: url('/images/about_hero.jpg');" role="img" aria-label="Modern professional office with natural light and collaborative workspace"></div>
+      <picture class="page-hero__bg">
+        <source srcset="/images/about_hero-900.webp 900w, /images/about_hero-1200.webp 1200w, /images/about_hero-1600.webp 1600w" sizes="100vw" type="image/webp" />
+        <img src="/images/about_hero.jpg" alt="Modern professional office with natural light and collaborative workspace" width="1200" height="802" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="container">
         <div class="page-hero__content">
           <nav aria-label="Breadcrumb">
