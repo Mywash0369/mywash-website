@@ -137,37 +137,85 @@
     }
 
     /* Featured team card for a single-profile section */
-    .team__grid--featured {
-      display: block;
-      max-width: 980px;
+    .team-feature {
+      max-width: 1040px;
       margin: 0 auto;
     }
 
     .team-card--featured {
+      position: relative;
       display: grid;
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
-      align-items: center;
-      padding: var(--space-xl);
+      gap: var(--space-lg);
+      align-items: stretch;
+      max-width: none;
+      padding: clamp(1.5rem, 4vw, 3rem);
+      overflow: hidden;
       border: 1px solid var(--color-border);
       border-radius: var(--radius-card);
-      background: linear-gradient(135deg, var(--color-white) 0%, #FFF8E6 100%);
-      text-align: center;
+      background:
+        linear-gradient(135deg, rgba(255, 248, 230, 0.82) 0%, rgba(255, 255, 255, 0.96) 46%),
+        var(--color-white);
+      text-align: left;
+    }
+
+    .team-card--featured::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: var(--color-primary);
+    }
+
+    .team-card__media {
+      position: relative;
+      align-self: start;
+      max-width: 340px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     .team-card--featured .team-card__photo {
-      width: min(280px, 100%);
+      width: 100%;
       height: auto;
-      aspect-ratio: 1 / 1;
-      margin: 0 auto;
+      aspect-ratio: 4 / 5;
+      margin: 0;
+      border: 0;
       border-radius: var(--radius-card);
       object-fit: cover;
-      border: 0;
+      object-position: center top;
+    }
+
+    .team-card__badge {
+      position: absolute;
+      right: var(--space-sm);
+      bottom: var(--space-sm);
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.125rem;
+      min-width: 8.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-card);
+      background-color: rgba(13, 13, 13, 0.88);
+      color: var(--color-white);
+    }
+
+    .team-card__badge-value {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      line-height: 1;
+    }
+
+    .team-card__badge-label {
+      font-size: var(--text-label);
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.82);
     }
 
     .team-card__content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: var(--space-sm);
     }
 
@@ -176,40 +224,71 @@
       font-weight: 600;
       letter-spacing: var(--tracking-label);
       text-transform: uppercase;
-      color: var(--color-primary);
+      color: var(--color-primary-hover);
     }
 
-    .team-card--featured .team-card__name,
+    .team-card--featured .team-card__name {
+      margin-bottom: 0;
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+    }
+
     .team-card--featured .team-card__title {
       margin-bottom: 0;
-    }
-
-    .team-card--featured .team-card__title {
-      color: var(--color-secondary);
+      color: var(--color-text-body);
+      font-size: var(--text-body);
+      font-weight: 600;
     }
 
     .team-card__summary {
-      font-size: var(--text-body);
+      max-width: 40rem;
+      margin: var(--space-xs) 0 0;
       color: var(--color-text-primary);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
       line-height: var(--leading-normal);
-      max-width: 34rem;
-      margin: 0 auto;
     }
 
     .team-card--featured .team-card__bio {
-      max-width: 36rem;
-      margin: 0 auto;
+      max-width: 42rem;
+      color: var(--color-text-body);
+      font-size: var(--text-body);
+      line-height: var(--leading-loose);
     }
 
-    @media (min-width: 768px) {
+    .team-card__highlights {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xs);
+      margin-top: var(--space-sm);
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .team-card__highlight {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      color: var(--color-text-body);
+      font-size: var(--text-small);
+    }
+
+    .team-card__highlight svg {
+      flex: 0 0 auto;
+      color: var(--color-primary-hover);
+    }
+
+    @media (min-width: 640px) {
+      .team-card__highlights {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 840px) {
       .team-card--featured {
-        grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
-        text-align: left;
+        grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+        gap: var(--space-xl);
       }
 
-      .team-card--featured .team-card__photo,
-      .team-card__summary,
-      .team-card--featured .team-card__bio {
+      .team-card__media {
         margin: 0;
       }
     }
@@ -491,24 +570,44 @@
           <p class="section-header__subtitle">Every placement we make reflects the expertise, care, and professionalism of the people on our team.</p>
         </header>
 
-        <div class="team__grid team__grid--featured reveal-stagger">
+        <div class="team-feature reveal-stagger">
 
           <!-- Managing Director -->
           <article class="team-card team-card--featured reveal">
-            <img
-              src="/images/tshabuse.jpg"
-              alt="Tshabuse NM, Managing Director at Mywash Recruitment Agency"
-              class="team-card__photo"
-              width="320" height="320"
-              loading="lazy"
-              decoding="async"
-            />
+            <div class="team-card__media">
+              <img
+                src="/images/tshabuse.jpg"
+                alt="Tshabuse NM, Managing Director at Mywash Recruitment Agency"
+                class="team-card__photo"
+                width="340" height="425"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="team-card__badge" aria-label="Over 10 years of recruitment experience">
+                <span class="team-card__badge-value">10+</span>
+                <span class="team-card__badge-label">Years in recruitment</span>
+              </div>
+            </div>
             <div class="team-card__content">
-              <span class="team-card__eyebrow">Leadership Profile</span>
+              <span class="team-card__eyebrow">Founder-Led Recruitment</span>
               <h3 class="team-card__name">Tshabuse NM</h3>
               <p class="team-card__title">Managing Director</p>
-              <p class="team-card__summary">More than 10 years of FMCG recruitment experience, focused on building strong teams and making placements that last.</p>
-              <p class="team-card__bio">A seasoned Recruitment Manager with over 10 years of experience connecting top talent with industry-leading companies in the FMCG sector. Known for a strategic approach to talent acquisition that drives business growth. Focused on building high-performing teams and lasting professional relationships.</p>
+              <p class="team-card__summary">Hands-on recruitment leadership shaped by more than a decade of FMCG experience and a practical understanding of what makes placements last.</p>
+              <p class="team-card__bio">Tshabuse brings a strategic, relationship-led approach to talent acquisition, connecting capable people with companies that need dependable teams. Her work is focused on quality conversations, clear expectations, and long-term fit for both candidates and employers.</p>
+              <div class="team-card__highlights" aria-label="Leadership focus areas">
+                <span class="team-card__highlight">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+                  Talent matching
+                </span>
+                <span class="team-card__highlight">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7-3 5 3 5"/><path d="m19 7 3 5-3 5"/></svg>
+                  FMCG networks
+                </span>
+                <span class="team-card__highlight">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                  Lasting placements
+                </span>
+              </div>
             </div>
           </article>
 

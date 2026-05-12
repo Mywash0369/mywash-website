@@ -136,6 +136,26 @@
       margin-bottom: var(--space-md);
     }
 
+    .staffing-cta-split {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .staffing-cta-split .photo-panel {
+      min-height: 68vh;
+      flex: 1 1 0;
+    }
+
+    @media (min-width: 768px) {
+      .staffing-cta-split {
+        flex-direction: row;
+      }
+
+      .staffing-cta-split .photo-panel {
+        min-width: 0;
+      }
+    }
+
     /* Role pill list */
     .role-list {
       display: flex;
@@ -462,7 +482,7 @@
     </section>
 
     <!-- PHOTO PANELS -->
-    <div class="photo-stack">
+    <div class="photo-stack photo-stack--split staffing-cta-split" role="group" aria-label="Candidate registration and hiring request options">
       <section class="photo-panel" style="--panel-bg: url('/images/candidate_cta.jpg');" aria-labelledby="candidates-panel-heading">
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Looking for Work?</span>
