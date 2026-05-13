@@ -1087,21 +1087,54 @@ p {
 .services__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
+  gap: 0;
 }
 
 .service-card {
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
+  border-radius: 0;
   padding: var(--space-lg);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.service-card:not(:first-child) {
+  margin-left: -1px;
+}
+
+/* Blue connector dot between cards */
+.service-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -9px;
+  top: 40px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* White notch slot on receiving side */
+.service-card:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 40px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-secondary);
+border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .service-card:hover {
   border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
 }
 
 .service-card__icon {
@@ -1130,6 +1163,13 @@ p {
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .service-card:nth-child(odd)::after {
+    display: block;
+  }
+  .service-card:nth-child(even)::after {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1137,20 +1177,15 @@ p {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .services__grid:has(> .service-card:nth-child(5):last-child) {
-    grid-template-columns: repeat(6, 1fr);
+  .service-card::after,
+  .service-card::before {
+    display: block;
   }
-
-  .services__grid:has(> .service-card:nth-child(5):last-child) > .service-card {
-    grid-column: span 2;
+  .service-card:last-child::after {
+    display: none;
   }
-
-  .services__grid:has(> .service-card:nth-child(5):last-child) > .service-card:nth-child(4) {
-    grid-column: 2 / span 2;
-  }
-
-  .services__grid:has(> .service-card:nth-child(5):last-child) > .service-card:nth-child(5) {
-    grid-column: 4 / span 2;
+  .service-card:first-child::before {
+    display: none;
   }
 }
 
@@ -1922,10 +1957,10 @@ p {
 }
 
 /* ==========================================================================
-   24. UTILITY ADDITIONS — replaces inline styles
+   24. UTILITY ADDITIONS - replaces inline styles
    ========================================================================== */
 
-/* address reset — removes browser italic */
+/* address reset - removes browser italic */
 address { font-style: normal; }
 
 /* stat panel plus sign */
