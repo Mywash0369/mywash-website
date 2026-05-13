@@ -1094,31 +1094,19 @@ p {
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: 0;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   transition: border-color 0.2s ease, background-color 0.2s ease;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: visible;
 }
 
 .service-card:not(:first-child) {
   margin-left: -1px;
 }
 
-/* Blue connector dot between cards */
-.service-card:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -9px;
-  top: 40px;
-  width: 16px;
-  height: 16px;
-  background: var(--color-primary);
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* White notch slot on receiving side */
+/* Blue notch slot on receiving side - hidden by default (mobile first) */
 .service-card:not(:first-child)::before {
   content: '';
   position: absolute;
@@ -1127,9 +1115,10 @@ p {
   width: 16px;
   height: 16px;
   background: var(--color-secondary);
-border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
+  display: none;
 }
 
 .service-card:hover {
@@ -1163,13 +1152,6 @@ border: 1px solid var(--color-secondary);
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .service-card:nth-child(odd)::after {
-    display: block;
-  }
-  .service-card:nth-child(even)::after {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1177,13 +1159,10 @@ border: 1px solid var(--color-secondary);
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .service-card::after,
-  .service-card::before {
+  .service-card:not(:first-child)::before {
     display: block;
   }
-  .service-card:last-child::after {
-    display: none;
-  }
+
   .service-card:first-child::before {
     display: none;
   }
