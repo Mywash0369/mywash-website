@@ -395,7 +395,7 @@ p {
 }
 
 .nav__logo-img {
-  height: 144px;
+  height: 75px;
   width: auto;
   transition: filter 0.35s var(--ease-out);
 }
@@ -1561,7 +1561,7 @@ p {
 }
 
 .footer__logo {
-  height: 120px;
+  height: 65px;
   width: auto;
   margin-bottom: var(--space-md);
 }
