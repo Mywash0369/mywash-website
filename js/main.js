@@ -394,3 +394,48 @@ if ('loading' in HTMLImageElement.prototype) {
 document.querySelectorAll('.js-year').forEach(el => {
   el.textContent = new Date().getFullYear();
 });
+
+/* ==========================================================================
+   11. PACKAGE FLYER LIGHTBOX - Native <dialog> modal preview
+   ========================================================================== */
+
+(() => {
+  const triggers = document.querySelectorAll('.package-card__media');
+  if (!triggers.length) return;
+
+  let dialog = null;
+  let dialogImg = null;
+
+  function ensureDialog() {
+    if (dialog) return;
+    dialog = document.createElement('dialog');
+    dialog.className = 'package-lightbox';
+    dialog.setAttribute('aria-label', 'Travel package flyer preview');
+    dialog.innerHTML = `
+      <div class="package-lightbox__inner">
+        <button type="button" class="package-lightbox__close" aria-label="Close flyer preview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <img class="package-lightbox__img" src="" alt="" />
+      </div>
+    `;
+    document.body.appendChild(dialog);
+    dialogImg = dialog.querySelector('.package-lightbox__img');
+
+    dialog.querySelector('.package-lightbox__close').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  }
+
+  triggers.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const img = btn.querySelector('.package-card__img');
+      if (!img) return;
+      ensureDialog();
+      dialogImg.src = img.currentSrc || img.src;
+      dialogImg.alt = img.alt;
+      dialog.showModal();
+    });
+  });
+})();
