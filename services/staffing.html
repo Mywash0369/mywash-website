@@ -11,15 +11,16 @@
   <meta property="og:title" content="Staffing | Mywash Recruitment Agency" />
   <meta property="og:description" content="Temporary and permanent staffing in Gauteng for domestic workers, nannies, gardeners, cleaners, caregivers, and FMCG general assistants." />
   <meta property="og:url" content="https://www.mywashrecruitment.co.za/services/staffing.html" />
-  <meta property="og:image" content="https://www.mywashrecruitment.co.za/images/og/staffing-og.jpg" />
+  <meta property="og:image" content="https://www.mywashrecruitment.co.za/images/staffing_hero-1200.webp" />
   <meta property="og:site_name" content="Mywash Recruitment Agency" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Staffing | Mywash Recruitment Agency" />
   <meta name="twitter:description" content="Temporary and permanent staffing in Gauteng for domestic workers, nannies, gardeners, cleaners, caregivers, and FMCG general assistants." />
-  <meta name="twitter:image" content="https://www.mywashrecruitment.co.za/images/og/staffing-og.jpg" />
+  <meta name="twitter:image" content="https://www.mywashrecruitment.co.za/images/staffing_hero-1200.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="icon" type="image/png" href="/images/logo.png" />
   <link rel="apple-touch-icon" href="/images/logo.png" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
@@ -267,22 +268,6 @@
         height: 2px;
       }
     }
-
-    /* FAQ */
-    .faq__list { display: flex; flex-direction: column; border-top: 1px solid var(--color-border); }
-    .faq__item { border-bottom: 1px solid var(--color-border); }
-    .faq__question {
-      width: 100%; text-align: left; padding: var(--space-md) 0;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: var(--space-md); font-size: var(--text-body); font-weight: 500;
-      color: var(--color-text-primary); font-family: var(--font-body);
-      background: none; border: none; cursor: pointer;
-    }
-    .faq__icon { width: 20px; height: 20px; flex-shrink: 0; color: var(--color-primary); transition: transform 0.3s var(--ease-out); }
-    .faq__item.is-open .faq__icon { transform: rotate(45deg); }
-    .faq__answer { max-height: 0; overflow: hidden; transition: max-height 0.35s var(--ease-out), padding 0.35s var(--ease-out); }
-    .faq__item.is-open .faq__answer { max-height: 400px; padding-bottom: var(--space-md); }
-    .faq__answer p { font-size: var(--text-small); color: var(--color-text-body); line-height: var(--leading-loose); }
   </style>
 </head>
 <body>
@@ -370,16 +355,16 @@
             <h2 id="staffing-intro-heading">The Right Person for the Right Role.</h2>
             <p>Finding reliable staff is one of the hardest things a household or business faces. We take the guesswork out of it by sourcing, screening, and placing candidates who fit the role and the environment they are joining.</p>
             <p>Established in 2026, Mywash Recruitment Agency brings expertise across domestic, commercial, caregiving, cleaning, hospitality, education, and FMCG support roles.</p>
-            <div class="checklist mt-md" role="list">
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Temporary and permanent placements</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Household and commercial roles</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>All candidates screened and reference-checked</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Wholly Black-owned and managed</div>
-            </div>
+            <ul class="checklist mt-md" role="list">
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Temporary and permanent placements</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Household and commercial roles</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>All candidates screened and reference-checked</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Wholly Black-owned and managed</li>
+            </ul>
           </div>
           <div class="two-col__media reveal">
             <img
-              src="/images/staffing_intro.jpg"
+              src="/images/staffing_intro.webp"
               alt="Recruitment consultant interviewing a job candidate in a professional office setting"
               width="800" height="520" loading="lazy" decoding="async"
             />
@@ -491,7 +476,8 @@
 
     <!-- PHOTO PANELS -->
     <div class="photo-stack photo-stack--split staffing-cta-split" role="group" aria-label="Candidate registration and hiring request options">
-      <section class="photo-panel" style="--panel-bg: url('/images/candidate_cta-1200.webp');" aria-labelledby="candidates-panel-heading">
+      <section class="photo-panel" aria-labelledby="candidates-panel-heading">
+        <img src="/images/candidate_cta-1200.webp" alt="" class="photo-panel__bg" width="1200" height="800" loading="lazy" decoding="async" />
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Looking for Work?</span>
           <h2 id="candidates-panel-heading" class="photo-panel__title">Register as a Candidate</h2>
@@ -499,7 +485,8 @@
           <a href="mailto:apply@mywashrecruitment.co.za" class="btn btn--primary">Register via Email</a>
         </div>
       </section>
-      <section class="photo-panel" style="--panel-bg: url('/images/employer_cta-1200.webp');" aria-labelledby="employers-panel-heading">
+      <section class="photo-panel" aria-labelledby="employers-panel-heading">
+        <img src="/images/employer_cta-1200.webp" alt="" class="photo-panel__bg" width="1200" height="800" loading="lazy" decoding="async" />
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Need to Hire?</span>
           <h2 id="employers-panel-heading" class="photo-panel__title">Let's Find Your Next Hire</h2>
@@ -516,35 +503,35 @@
           <span class="label">Questions</span>
           <h2 id="faq-heading">Common Questions</h2>
         </header>
-        <div class="faq__list reveal" role="list">
-          <div class="faq__item">
-            <button type="button" class="faq__question" aria-expanded="false">
+        <div class="faq__list reveal">
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Do you place temporary and permanent staff?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Yes. We handle both temporary and permanent placements across our staffing categories. Whether you need someone for a week or a long-term hire, we can help.</p></div>
-          </div>
-          <div class="faq__item">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Are all candidates reference-checked?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Yes. Every candidate we place goes through an interview and reference check process before we present them to you. We only forward people we would place ourselves.</p></div>
-          </div>
-          <div class="faq__item">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Do you recruit for the FMCG industry?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Yes. Our Managing Director has over 10 years of FMCG recruitment experience. We supply general assistants and other operational staff to FMCG companies across Gauteng and understand exactly what these roles demand.</p></div>
-          </div>
-          <div class="faq__item">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               How do I register as a candidate?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>The fastest way is to WhatsApp us with your name, the type of role you are looking for, and your location. We will capture your details and contact you when a suitable opportunity comes up.</p></div>
-          </div>
+          </details>
         </div>
       </div>
     </section>
@@ -603,18 +590,5 @@
   </a>
 
   <script src="/js/main.js" defer></script>
-  <script>
-    document.querySelectorAll('.faq__question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq__item');
-        const isOpen = item.classList.contains('is-open');
-        document.querySelectorAll('.faq__item').forEach(i => {
-          i.classList.remove('is-open');
-          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) { item.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); }
-      });
-    });
-  </script>
 </body>
 </html>

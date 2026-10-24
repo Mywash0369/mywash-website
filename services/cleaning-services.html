@@ -11,15 +11,16 @@
   <meta property="og:title" content="Cleaning Services | Mywash Recruitment Agency" />
   <meta property="og:description" content="General, industrial, healthcare, commercial and specialised cleaning services across Gauteng." />
   <meta property="og:url" content="https://www.mywashrecruitment.co.za/services/cleaning-services.html" />
-  <meta property="og:image" content="https://www.mywashrecruitment.co.za/images/og/cleaning-og.jpg" />
+  <meta property="og:image" content="https://www.mywashrecruitment.co.za/images/cleaning_hero-1200.webp" />
   <meta property="og:site_name" content="Mywash Recruitment Agency" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cleaning Services | Mywash Recruitment Agency" />
   <meta name="twitter:description" content="General, industrial, healthcare, commercial and specialised cleaning services across Gauteng." />
-  <meta name="twitter:image" content="https://www.mywashrecruitment.co.za/images/og/cleaning-og.jpg" />
+  <meta name="twitter:image" content="https://www.mywashrecruitment.co.za/images/cleaning_hero-1200.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="icon" type="image/png" href="/images/logo.png" />
   <link rel="apple-touch-icon" href="/images/logo.png" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
@@ -167,7 +168,7 @@
     <section class="page-hero page-hero--md" aria-label="Cleaning services hero">
       <picture class="page-hero__bg">
         <source srcset="/images/cleaning_hero-900.webp 900w, /images/cleaning_hero-1200.webp 1200w" sizes="100vw" type="image/webp" />
-        <img src="/images/cleaning_hero-1200.webp" alt="Professional cleaning team working in a bright commercial office space" width="1200" height="1798" fetchpriority="high" decoding="async" />
+        <img src="/images/cleaning_hero-1200.webp" alt="Professional cleaning team working in a bright commercial office space" width="1200" height="800" fetchpriority="high" decoding="async" />
       </picture>
       <div class="container">
         <div class="page-hero__content">
@@ -193,16 +194,16 @@
             <h2 id="cleaning-intro-heading">Clean Spaces. Reliable People.</h2>
             <p>Whether you need a domestic cleaner once a week or a full contract cleaning team for a commercial facility, we supply trained and vetted cleaning professionals who take the job seriously.</p>
             <p>We cover domestic, commercial, industrial, and healthcare environments across Gauteng, with specialised services available for surfaces and materials that require extra care.</p>
-            <div class="checklist mt-md" role="list">
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Domestic and commercial environments</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Vetted, trained cleaning professionals</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Once-off, recurring, and contract arrangements</div>
-              <div class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Specialised surface and material cleaning</div>
-            </div>
+            <ul class="checklist mt-md" role="list">
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Domestic and commercial environments</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Vetted, trained cleaning professionals</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Once-off, recurring, and contract arrangements</li>
+              <li class="checklist__item"><svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Specialised surface and material cleaning</li>
+            </ul>
           </div>
           <div class="two-col__media reveal">
             <img
-              src="/images/cleaning_intro.jpg"
+              src="/images/cleaning_intro.webp"
               alt="Professional cleaner in uniform wiping down a surface in a modern office environment"
               width="800" height="520" loading="lazy" decoding="async"
             />
@@ -305,7 +306,8 @@
 
     <!-- PHOTO PANEL -->
     <div class="photo-stack">
-      <section class="photo-panel" style="--panel-bg: url('/images/cleaning_cta-1200.webp');" aria-labelledby="cleaning-panel-heading">
+      <section class="photo-panel" aria-labelledby="cleaning-panel-heading">
+        <img src="/images/cleaning_cta-1200.webp" alt="" class="photo-panel__bg" width="1200" height="800" loading="lazy" decoding="async" />
         <div class="photo-panel__content">
           <span class="label photo-panel__label">Our Standard</span>
           <h2 id="cleaning-panel-heading" class="photo-panel__title">Cleaning Done Right, Every Time</h2>

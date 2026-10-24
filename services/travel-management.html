@@ -13,17 +13,18 @@
   <meta property="og:title"       content="Travel Management | Mywash Recruitment Agency" />
   <meta property="og:description" content="We plan, research and book trips for individuals and groups - locally and internationally. View our upcoming travel packages." />
   <meta property="og:url"         content="https://www.mywashrecruitment.co.za/services/travel-management.html" />
-  <meta property="og:image"       content="https://www.mywashrecruitment.co.za/images/og/travel-og.jpg" />
+  <meta property="og:image"       content="https://www.mywashrecruitment.co.za/images/travel_hero-1200.webp" />
   <meta property="og:site_name"   content="Mywash Recruitment Agency" />
 
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Travel Management | Mywash Recruitment Agency" />
   <meta name="twitter:description" content="We plan, research and book trips for individuals and groups - locally and internationally." />
-  <meta name="twitter:image"       content="https://www.mywashrecruitment.co.za/images/og/travel-og.jpg" />
+  <meta name="twitter:image"       content="https://www.mywashrecruitment.co.za/images/travel_hero-1200.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="icon" type="image/png" href="/images/logo.png" />
   <link rel="apple-touch-icon" href="/images/logo.png" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
@@ -163,63 +164,6 @@
         align-items: flex-start;
       }
     }
-
-    /* FAQ accordion */
-    .faq__list {
-      display: flex;
-      flex-direction: column;
-      border-top: 1px solid var(--color-border);
-    }
-
-    .faq__item {
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .faq__question {
-      width: 100%;
-      text-align: left;
-      padding: var(--space-md) 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-md);
-      font-size: var(--text-body);
-      font-weight: 500;
-      color: var(--color-text-primary);
-      font-family: var(--font-body);
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-
-    .faq__icon {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      color: var(--color-primary);
-      transition: transform 0.3s var(--ease-out);
-    }
-
-    .faq__item.is-open .faq__icon {
-      transform: rotate(45deg);
-    }
-
-    .faq__answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s var(--ease-out), padding 0.35s var(--ease-out);
-    }
-
-    .faq__item.is-open .faq__answer {
-      max-height: 400px;
-      padding-bottom: var(--space-md);
-    }
-
-    .faq__answer p {
-      font-size: var(--text-small);
-      color: var(--color-text-body);
-      line-height: var(--leading-loose);
-    }
   </style>
 </head>
 
@@ -287,7 +231,7 @@
     <section class="page-hero page-hero--md" aria-label="Travel management hero">
       <picture class="page-hero__bg">
         <source srcset="/images/travel_hero-900.webp 900w, /images/travel_hero-1200.webp 1200w" sizes="100vw" type="image/webp" />
-        <img src="/images/travel_hero-1200.webp" alt="Scenic travel destination with clear blue water and white sandy beach" width="1200" height="948" fetchpriority="high" decoding="async" />
+        <img src="/images/travel_hero-1200.webp" alt="Scenic travel destination with clear blue water and white sandy beach" width="1200" height="800" fetchpriority="high" decoding="async" />
       </picture>
       <div class="container">
         <div class="page-hero__content">
@@ -321,28 +265,28 @@
             <h2 id="travel-intro-heading">Every Trip, Taken Care Of</h2>
             <p>Travel should be something to look forward to, not plan around. We handle the full process - from research and routing to booking and logistics - so you can focus on the experience, not the admin.</p>
             <p>We plan trips for individuals and groups across South Africa and internationally. Every package is structured, every detail confirmed, and every departure point organised. You show up. We handle the rest.</p>
-            <div class="checklist mt-md" role="list">
-              <div class="checklist__item">
+            <ul class="checklist mt-md" role="list">
+              <li class="checklist__item">
                 <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                 Local &amp; international trip planning
-              </div>
-              <div class="checklist__item">
+              </li>
+              <li class="checklist__item">
                 <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                 Individual and group bookings
-              </div>
-              <div class="checklist__item">
+              </li>
+              <li class="checklist__item">
                 <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                 Transport, accommodation &amp; activity coordination
-              </div>
-              <div class="checklist__item">
+              </li>
+              <li class="checklist__item">
                 <svg class="checklist__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
                 Fully itemised packages with clear pricing
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="two-col__media reveal">
             <img
-              src="/images/travel_intro.jpg"
+              src="/images/travel_intro.webp"
               alt="Group of travellers boarding a coach for a guided tour departure"
               width="800"
               height="520"
@@ -409,11 +353,7 @@
           <!-- 1. Weekend Gateway to Hartbeespoort -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Weekend Gateway to Hartbeespoort">
-              <img src="/images/package_hartbeespoort_feb_2027.jpg" alt="Weekend Gateway to Hartbeespoort travel package flyer - 26 to 28 February 2027" class="package-card__img" width="1080" height="1080" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_hartbeespoort_feb_2027.webp" alt="Weekend Gateway to Hartbeespoort travel package flyer - 26 to 28 February 2027" class="package-card__img" width="960" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">26 - 28 February 2027</span>
@@ -447,11 +387,7 @@
           <!-- 2. Durban Trip (March) -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Durban Trip in March 2027">
-              <img src="/images/package_durban_mar_2027.jpg" alt="Durban Trip travel package flyer - 26 to 29 March 2027" class="package-card__img" width="1024" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_durban_mar_2027.webp" alt="Durban Trip travel package flyer - 26 to 29 March 2027" class="package-card__img" width="768" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">26 - 29 March 2027</span>
@@ -486,11 +422,7 @@
           <!-- 3. Cape Town Trip -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Cape Town Trip">
-              <img src="/images/package_cape_town_apr_2027.jpg" alt="Cape Town Trip travel package flyer - 23 to 27 April 2027" class="package-card__img" width="1024" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_cape_town_apr_2027.webp" alt="Cape Town Trip travel package flyer - 23 to 27 April 2027" class="package-card__img" width="768" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">23 - 27 April 2027</span>
@@ -526,11 +458,7 @@
           <!-- 4. Trip to Lesotho -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Trip to Lesotho">
-              <img src="/images/package_lesotho_aug_2027.jpg" alt="Trip to Lesotho travel package flyer - 27 to 30 August 2027" class="package-card__img" width="1024" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_lesotho_aug_2027.webp" alt="Trip to Lesotho travel package flyer - 27 to 30 August 2027" class="package-card__img" width="768" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">27 - 30 August 2027</span>
@@ -564,11 +492,7 @@
           <!-- 5. Mozambique Trip -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Mozambique Trip">
-              <img src="/images/package_mozambique_sep_2027.jpg" alt="Mozambique Trip travel package flyer - 24 to 27 September 2027" class="package-card__img" width="1024" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_mozambique_sep_2027.webp" alt="Mozambique Trip travel package flyer - 24 to 27 September 2027" class="package-card__img" width="768" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">24 - 27 September 2027</span>
@@ -603,11 +527,7 @@
           <!-- 6. Durban Trip (September) -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Durban Trip in September 2027">
-              <img src="/images/package_durban_sep_2027.jpg" alt="Durban Trip travel package flyer - 26 to 29 September 2027" class="package-card__img" width="1024" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_durban_sep_2027.webp" alt="Durban Trip travel package flyer - 26 to 29 September 2027" class="package-card__img" width="768" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">26 - 29 September 2027</span>
@@ -642,11 +562,7 @@
           <!-- 7. Trip to Mauritius -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Trip to Mauritius">
-              <img src="/images/package_mauritius_oct_2027.jpg" alt="Trip to Mauritius travel package flyer - 14 to 18 October 2027" class="package-card__img" width="908" height="1280" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_mauritius_oct_2027.webp" alt="Trip to Mauritius travel package flyer - 14 to 18 October 2027" class="package-card__img" width="681" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">14 - 18 October 2027</span>
@@ -681,11 +597,7 @@
           <!-- 8. Eswatini Trip -->
           <article class="package-card reveal">
             <button type="button" class="package-card__media" aria-label="View full flyer for Eswatini Trip">
-              <img src="/images/package_eswatini_oct_2027.jpg" alt="Eswatini Trip travel package flyer - 28 to 31 October 2027" class="package-card__img" width="1080" height="1080" loading="lazy" decoding="async" />
-              <span class="package-card__zoom" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                View Flyer
-              </span>
+              <img src="/images/package_eswatini_oct_2027.webp" alt="Eswatini Trip travel package flyer - 28 to 31 October 2027" class="package-card__img" width="960" height="960" loading="lazy" decoding="async" />
             </button>
             <div class="package-card__header">
               <span class="package-card__date">28 - 31 October 2027</span>
@@ -728,35 +640,35 @@
           <span class="label">Questions</span>
           <h2 id="faq-heading">Common Questions</h2>
         </header>
-        <div class="faq__list reveal" role="list">
-          <div class="faq__item" role="listitem">
-            <button type="button" class="faq__question" aria-expanded="false">
+        <div class="faq__list reveal">
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Do you plan international trips?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Yes. We plan, research, and book trips for individuals and groups, both locally within South Africa and internationally. Send us your requirements via WhatsApp, and we will put together a package.</p></div>
-          </div>
-          <div class="faq__item" role="listitem">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Can I book a custom trip rather than a set package?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Yes. Our set packages are popular group trips, but we also plan custom trips tailored to your destination, dates, and group. Contact us to discuss your requirements.</p></div>
-          </div>
-          <div class="faq__item" role="listitem">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               What happens to my deposit if I cancel?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Deposits are non-refundable because they are used to secure accommodation, transport, and activities. If you cancel, your deposit cannot be returned. We recommend booking only when you are certain of your dates.</p></div>
-          </div>
-          <div class="faq__item" role="listitem">
-            <button type="button" class="faq__question" aria-expanded="false">
+          </details>
+          <details class="faq__item" name="faq">
+            <summary class="faq__question">
               Where do current packages depart from?
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+            </summary>
             <div class="faq__answer"><p>Road trip packages depart from Engen Garage, Big Bird South, Midrand, while flight packages (such as Cape Town and Mauritius) depart from OR Tambo International Airport. Exact departure times are confirmed when you book.</p></div>
-          </div>
+          </details>
         </div>
       </div>
     </section>
@@ -817,23 +729,6 @@
   </a>
 
   <script src="/js/main.js" defer></script>
-  <script>
-    // FAQ accordion
-    document.querySelectorAll('.faq__question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq__item');
-        const isOpen = item.classList.contains('is-open');
-        document.querySelectorAll('.faq__item').forEach(i => {
-          i.classList.remove('is-open');
-          i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-        });
-        if (!isOpen) {
-          item.classList.add('is-open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>

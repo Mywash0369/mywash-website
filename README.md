@@ -1,4 +1,4 @@
-# Mywash Recruitment Agency — Website
+# Mywash Recruitment Agency - Website
 
 **Registered entity:** K2026/125236/07  
 **Stack:** HTML5 · CSS3 · Vanilla JavaScript  
@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-A fully responsive, SEO-optimised marketing website for Mywash Recruitment Agency — a Gauteng-based recruitment, staffing, travel management, and cleaning services business.
+A fully responsive, SEO-optimised marketing website for Mywash Recruitment Agency - a Gauteng-based recruitment, staffing, travel management, and cleaning services business.
 
 ---
 
@@ -93,7 +93,7 @@ mywash/
 2. Log into [netlify.com](https://netlify.com) and click **Add new site**
 3. Select **Import from GitHub** and choose this repo
 4. Build settings:
-   - Build command: *(leave blank — static site)*
+   - Build command: *(leave blank - static site)*
    - Publish directory: `.` *(root of repo)*
 5. Click **Deploy site**
 
@@ -101,15 +101,15 @@ mywash/
 
 1. Client purchases domain (recommended: **mywashrecruitment.co.za** via Afrihost or Domains.co.za)
 2. In Netlify: **Domain settings > Add custom domain**
-3. Update DNS at registrar — point to Netlify nameservers
+3. Update DNS at registrar - point to Netlify nameservers
 4. Netlify auto-provisions SSL (HTTPS) via Let's Encrypt
 
 ### After Going Live
 
-1. **Update canonical URLs** in every `<head>` — replace `https://www.mywashrecruitment.co.za` with the actual live domain if different
+1. **Update canonical URLs** in every `<head>` - replace `https://www.mywashrecruitment.co.za` with the actual live domain if different
 2. **Submit sitemap to Google Search Console:**  
    Go to [search.google.com/search-console](https://search.google.com/search-console) > Sitemaps > Submit `https://yourdomain.co.za/sitemap.xml`
-3. **Update email** — replace `mywash@mail.com` with the permanent domain email once it is set up
+3. **Update email** - replace `mywash@mail.com` with the permanent domain email once it is set up
 
 ---
 
@@ -153,8 +153,8 @@ Once the domain is purchased and email is configured, replace every instance of 
 ## Known Limitations
 
 - Contact form routes through WhatsApp (no server-side email). A backend or service like Formspree/Netlify Forms can be added when required.
-- Job listings page not yet built — placeholder for future development.
-- OG images (`/images/og/*.jpg`) are referenced but not yet created. For rich social sharing previews, create 1200×630px branded images for each page.
+- Job listings page not yet built - placeholder for future development.
+- OG images use each page's hero WebP image or logo.
 
 ---
 
@@ -163,14 +163,14 @@ Once the domain is purchased and email is configured, replace every instance of 
 - **Job listings page** with filtering (requires CMS or JSON feed)
 - **Headless CMS integration** (Contentful or Sanity) for client self-management of travel packages and job listings
 - **Netlify Forms** or backend email for the contact form
-- **Google Analytics 4** — add `gtag.js` snippet to all pages when ready
-- **OG images** — create branded 1200×630px images for each page for social sharing
+- **Google Analytics 4** - add `gtag.js` snippet to all pages when ready
+- **OG images** - create branded 1200x630px images for each page for social sharing
 
 ---
 
 ## Developer Notes
 
-- No build tools, no npm, no bundler — pure HTML/CSS/JS. Deploy as-is.
+- No build tools, no npm, no bundler - pure HTML/CSS/JS. Deploy as-is.
 - All CSS is in one file (`css/main.css`) shared across all pages.
 - All JS is in one file (`js/main.js`) shared across all pages.
 - Page-specific CSS is scoped in `<style>` blocks within each HTML file's `<head>`.
